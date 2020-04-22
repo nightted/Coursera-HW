@@ -38,7 +38,7 @@ def Kager_Algo(Edgelist,Nodelist):
             if remove_node in ele :
                 idx = ele.index(remove_node)
                 ele[idx] = left_node
-        Edgelist = [sorted(par) for par in Edgelist]    
+        Edgelist = [sorted(par) for par in Edgelist] #sorted edge element to avoid mis-count in the edge removing step 
         
     #print(Edgelist)
     return len(Edgelist)
